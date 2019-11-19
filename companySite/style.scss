@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import "colors";
+
+/*========= base ===========*/
+
+html {
+  margin: 0;
+  padding:0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,li,dl,dt,dd {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+a { 
+  text-decoration: none;
+}
+
+$layout-width-inner: 1086px;
+
+$breakpoints: (
+  "sp": "screen and (max-width: 767px)",
+  "tab": "screen and (max-width: #{$layout-width-inner - 1px})",
+  "pc": "screen and (min-width: #{$layout-width-inner})",
+);
+
+$tab-per: 0.8;
+
+$sp-per: 0.35;
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+/*========= header ===========*/
+header {
+  background-color: $blue;
+  position: fixed;
+  width: 100%;
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: $layout-width-inner;
+    margin: 0 auto;
+    @include mq('sp'){
+      height: 60px;
+    }
+    .logo {
+      h1 {
+        height: 39px;
+      }
+      img {
+        width: 200px;
+        height: 39px;
+      }
+    }
+
+    .nav-bar {
+      @include mq('tab') {
+        display: none;
+      }
+      .nav-items {
+        display: flex;
+        li {
+          margin-left: 30px;
+        }
+        a {
+          color: #FFFFFF;
+          font-size: 16px;
+          &:hover {
+            border-bottom: solid 2px $red;
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+/*========= main visual ===========*/
+.mainvisual {
+  background-image: url(images/mainvisual.png);
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  text-align: center;
+  @include mq('sp') {
+    height: 100vh;
+  }
+  h1 {
+    font-size: 68px;
+    padding-top: 249px;
+    @include mq('tab') {
+      font-size: 68px*$tab-per;
+    }
+    @include mq('sp') {
+      font-size: 68px*$sp-per;
+      padding-top: 180px;
+    }
+  }
+
+  h2 {
+    font-size: 38px;
+    margin-bottom: 82px;
+    @include mq('tab') {
+      font-size: 38px*$tab-per;
+    }
+    @include mq('sp') {
+      margin-bottom: 82px*$sp-per;
+      font-size: 38px*$sp-per;
+    }
+  }
+
+  a {
+    background-color: $blue;
+    color: #FFFFFF;
+    padding: 17px 81px;
+    font-size: 38px;
+    font-weight: bold;
+    border-radius: 12px;
+    @include mq('tab') {
+      font-size: 38px*$tab-per;
+      padding: 17px*$tab-per 81px*$tab-per;
+    }
+    @include mq('sp') {
+      font-size: 38px*$sp-per;
+      padding: 17px*$sp-per 81px*$sp-per;
+    }
+  }
+
+}
