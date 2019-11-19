@@ -99,6 +99,7 @@ header .inner .nav-bar .nav-items a:hover {
   background-size: cover;
   height: 700px;
   text-align: center;
+  margin-bottom: 68px;
 }
 
 @media screen and (max-width: 767px) {
@@ -164,5 +165,25 @@ header .inner .nav-bar .nav-items a:hover {
     font-size: 13.3px;
     padding: 5.95px 28.35px;
   }
+}
+
+/*========= card ===========*/
+.cardSection h2 {
+  color: #333333;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.cardSection hr {
+  width: 80px;
+  color: #3F51B5;
+  size: 5px;
+}
+
+.cardSection .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

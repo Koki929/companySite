@@ -107,6 +107,7 @@ header {
   background-size: cover;
   height: 700px;
   text-align: center;
+  margin-bottom: 68px;
   @include mq('sp') {
     height: 100vh;
   }
@@ -151,4 +152,25 @@ header {
     }
   }
 
+}
+
+/*========= card ===========*/
+.cardSection {
+  
+  h2 {
+    color: $black;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 44px;
+  }
+
+  hr {
+    width: 80px;
+    color: $blue;
+    size: 5px;
+  }
+
+  .card {
+    display: flex;
+  }
 }
