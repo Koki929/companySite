@@ -168,6 +168,10 @@ header .inner .nav-bar .nav-items a:hover {
 }
 
 /*========= card ===========*/
+.cardSection {
+  background-color: #EFEFEF;
+}
+
 .cardSection h2 {
   color: #333333;
   font-size: 60px;
@@ -181,9 +185,32 @@ header .inner .nav-bar .nav-items a:hover {
   size: 5px;
 }
 
-.cardSection .card {
+.cardSection .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.cardSection .cards .card {
+  background-color: #FFFFFF;
+}
+
+.cardSection .cards .card img {
+  width: 310px;
+  height: 156px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 26px;
+}
+
+.cardSection .cards .card h3 {
+  font-size: 20px;
+  color: #6F7579;
+  margin-bottom: 20px;
+}
+
+.cardSection .cards .card p {
+  font-size: 16px;
+  color: #6F7579;
 }
 /*# sourceMappingURL=style.css.map */
