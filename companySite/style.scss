@@ -64,6 +64,9 @@ header {
     height: 100px;
     width: $layout-width-inner;
     margin: 0 auto;
+    @include mq('tab') {
+      width: 100%;
+    }
     @include mq('sp'){
       height: 60px;
     }
@@ -107,10 +110,10 @@ header {
   background-size: cover;
   height: 700px;
   text-align: center;
-  
   @include mq('sp') {
-    height: 100vh;
+    height: 400px;
   }
+  
   h1 {
     font-size: 68px;
     padding-top: 249px;
@@ -157,10 +160,13 @@ header {
 /*========= card ===========*/
 .cardSection {
   background-color: $grey;
-  padding: 68px 0 128px 0;
+  padding: 68px 20px 128px 20px;
   .inner {
     width: $layout-width-inner;
     margin: 0 auto;
+    @include mq('tab') {
+      width: 100%;
+    }
     h2 {
       color: $black;
       font-size: 60px;
@@ -198,6 +204,13 @@ header {
         }
         @include mq('sp') {
           width: 100%;
+          margin-right: 0px;
+          &:nth-child(3n){
+            margin-right: 0px;
+          }
+          &:nth-child(2n){
+            margin-right: 0;
+          }
         }
         img {
           width: 100%;

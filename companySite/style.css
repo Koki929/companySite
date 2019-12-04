@@ -52,6 +52,12 @@ header .inner {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1085px) {
+  header .inner {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   header .inner {
     height: 60px;
@@ -103,7 +109,7 @@ header .inner .nav-bar .nav-items a:hover {
 
 @media screen and (max-width: 767px) {
   .mainvisual {
-    height: 100vh;
+    height: 400px;
   }
 }
 
@@ -169,12 +175,18 @@ header .inner .nav-bar .nav-items a:hover {
 /*========= card ===========*/
 .cardSection {
   background-color: #EFEFEF;
-  padding: 68px 0 128px 0;
+  padding: 68px 20px 128px 20px;
 }
 
 .cardSection .inner {
   width: 1086px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1085px) {
+  .cardSection .inner {
+    width: 100%;
+  }
 }
 
 .cardSection .inner h2 {
@@ -227,6 +239,13 @@ header .inner .nav-bar .nav-items a:hover {
 @media screen and (max-width: 767px) {
   .cardSection .inner .cards .card {
     width: 100%;
+    margin-right: 0px;
+  }
+  .cardSection .inner .cards .card:nth-child(3n) {
+    margin-right: 0px;
+  }
+  .cardSection .inner .cards .card:nth-child(2n) {
+    margin-right: 0;
   }
 }
 
