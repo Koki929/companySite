@@ -115,7 +115,7 @@ header .inner .nav-bar .nav-items a:hover {
 
 .mainvisual h1 {
   font-size: 68px;
-  padding-top: 249px;
+  padding-top: 240px;
 }
 
 @media screen and (max-width: 1085px) {
@@ -175,7 +175,7 @@ header .inner .nav-bar .nav-items a:hover {
 /*========= card ===========*/
 .cardSection {
   background-color: #EFEFEF;
-  padding: 68px 20px 128px 20px;
+  padding: 59px 20px 128px 20px;
 }
 
 .cardSection .inner {
@@ -193,7 +193,7 @@ header .inner .nav-bar .nav-items a:hover {
   color: #333333;
   font-size: 60px;
   text-align: center;
-  margin-bottom: 44px;
+  margin-bottom: 32px;
 }
 
 .cardSection .inner hr {
