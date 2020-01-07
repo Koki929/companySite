@@ -233,3 +233,82 @@ header {
     }
   }
 }
+
+/*========= news ===========*/
+.news {
+  padding: 68px 0 29px 0;
+  margin: 0 auto;
+  width: 845px;
+  h2 {
+    color: $black;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 34.5px;
+  }
+  hr {
+    margin-bottom: 90.5px;
+  }
+  .news-contents {
+    margin-bottom: 16px;
+    .news-content {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: solid 1px $black;
+      padding: 18.5px 9.5px 16.5px 7.5px;
+      &:nth-last-child(2) {
+        border-bottom: 0;
+        margin-bottom: 16px;
+      }
+      time {
+        font-size: 16px;
+        color: $black;
+        white-space: nowrap;
+      }
+      .label {
+        border-radius: 6px;
+        margin: 0 30px;
+        text-align: center;
+        font-weight: bold;
+        height: 30px;
+        margin: 0 30px;
+        a {
+          display: inline-block;
+          color: #FFFFFF;
+          font-size: 16px;
+          width: 100px;
+          height: 30px;
+          line-height: 30px;
+          white-space: nowrap;
+        }
+      }
+      .label1 {
+        background-color: #666;
+      }
+      .label2 {
+        background-color: $blue;
+      }
+      .label3 {
+        background-color: $red;
+      }
+      .news-title {
+        width: 576px;
+        a {
+        font-size: 16px;
+        color: $black;
+        }
+      }
+    }
+    .more {
+      text-align: center;
+      a {
+        color: $red;
+        font-size: 16px;
+        font-weight: bold;
+        .fas {
+          padding-left: 6.5px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
