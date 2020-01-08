@@ -239,6 +239,12 @@ header {
   padding: 68px 0 29px 0;
   margin: 0 auto;
   width: 845px;
+  @include mq('tab') {
+    width: 80%;
+  }
+  @include mq('sp') {
+    width: 80%;
+  }
   h2 {
     color: $black;
     font-size: 60px;
@@ -263,6 +269,13 @@ header {
         font-size: 16px;
         color: $black;
         white-space: nowrap;
+        line-height: 30px;
+        @include mq('tab') {
+          font-size: 16px * $tab-per;
+        }
+        @include mq('sp') {
+          font-size: 16px * $sp-per;
+        }
       }
       .label {
         border-radius: 6px;
@@ -270,7 +283,12 @@ header {
         text-align: center;
         font-weight: bold;
         height: 30px;
-        margin: 0 30px;
+        @include mq('tab') {
+          margin: 0 30px * $tab-per;
+        }
+        @include mq('sp') {
+          margin: 0 30px * $sp-per;
+        }
         a {
           display: inline-block;
           color: #FFFFFF;
@@ -279,6 +297,14 @@ header {
           height: 30px;
           line-height: 30px;
           white-space: nowrap;
+          @include mq('tab') {
+            width: 100px * $tab-per;
+            font-size: 16px * $tab-per;
+          }
+          @include mq('sp') {
+            width: 50px;
+            font-size: 16px * $sp-per;
+          }
         }
       }
       .label1 {
@@ -292,9 +318,22 @@ header {
       }
       .news-title {
         width: 576px;
+        @include mq('tab') {
+          width: 80%;
+        }
+        @include mq('sp') {
+          width: 80%;
+        }
         a {
         font-size: 16px;
         color: $black;
+        line-height: 30px;
+        @include mq('tab') {
+          font-size: 16px * $tab-per;
+        }
+        @include mq('sp') {
+          font-size: 16px * $sp-per;
+        }
         }
       }
     }

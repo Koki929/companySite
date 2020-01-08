@@ -278,6 +278,18 @@ header .inner .nav-bar .nav-items a:hover {
   width: 845px;
 }
 
+@media screen and (max-width: 1085px) {
+  .news {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news {
+    width: 80%;
+  }
+}
+
 .news h2 {
   color: #333333;
   font-size: 60px;
@@ -313,6 +325,19 @@ header .inner .nav-bar .nav-items a:hover {
   font-size: 16px;
   color: #333333;
   white-space: nowrap;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1085px) {
+  .news .news-contents .news-content time {
+    font-size: 12.8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news .news-contents .news-content time {
+    font-size: 5.6px;
+  }
 }
 
 .news .news-contents .news-content .label {
@@ -321,7 +346,18 @@ header .inner .nav-bar .nav-items a:hover {
   text-align: center;
   font-weight: bold;
   height: 30px;
-  margin: 0 30px;
+}
+
+@media screen and (max-width: 1085px) {
+  .news .news-contents .news-content .label {
+    margin: 0 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news .news-contents .news-content .label {
+    margin: 0 10.5px;
+  }
 }
 
 .news .news-contents .news-content .label a {
@@ -332,6 +368,20 @@ header .inner .nav-bar .nav-items a:hover {
   height: 30px;
   line-height: 30px;
   white-space: nowrap;
+}
+
+@media screen and (max-width: 1085px) {
+  .news .news-contents .news-content .label a {
+    width: 80px;
+    font-size: 12.8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news .news-contents .news-content .label a {
+    width: 50px;
+    font-size: 5.6px;
+  }
 }
 
 .news .news-contents .news-content .label1 {
@@ -350,9 +400,34 @@ header .inner .nav-bar .nav-items a:hover {
   width: 576px;
 }
 
+@media screen and (max-width: 1085px) {
+  .news .news-contents .news-content .news-title {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news .news-contents .news-content .news-title {
+    width: 80%;
+  }
+}
+
 .news .news-contents .news-content .news-title a {
   font-size: 16px;
   color: #333333;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1085px) {
+  .news .news-contents .news-content .news-title a {
+    font-size: 12.8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news .news-contents .news-content .news-title a {
+    font-size: 5.6px;
+  }
 }
 
 .news .news-contents .more {
