@@ -28,6 +28,7 @@ p {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 /*========= header ===========*/
@@ -443,5 +444,246 @@ header .inner .nav-bar .nav-items a:hover {
 .news .news-contents .more a .fas {
   padding-left: 6.5px;
   font-size: 12px;
+}
+
+/*========= price ===========*/
+.price {
+  background-color: #EFEFEF;
+  margin: 0 auto;
+  padding: 60px 0 102px;
+}
+
+.price h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 34.5px;
+}
+
+.price hr {
+  margin-bottom: 80.5px;
+}
+
+.price .price-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 1085px) {
+  .price .price-items {
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.price .price-items .price-image {
+  height: 300px;
+  width: 360px;
+  margin-right: 122px;
+}
+
+@media screen and (max-width: 1085px) {
+  .price .price-items .price-image {
+    margin: 0 auto 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .price .price-items .price-image {
+    width: 270px;
+    height: 288px;
+    margin: 0 auto 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .price .price-items .price-image img {
+    width: 270px;
+    height: 288px;
+  }
+}
+
+.price .price-items .price-contents .price-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+}
+
+.price .price-items .price-contents .price-table th {
+  width: 160px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 12px 0 11px;
+  font-size: 16px;
+  border: 1px solid #707070;
+}
+
+@media screen and (max-width: 767px) {
+  .price .price-items .price-contents .price-table th {
+    font-size: 12px;
+  }
+}
+
+.price .price-items .price-contents .price-table td {
+  width: 224px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #FFFFFF;
+  color: #333333;
+  text-align: right;
+  padding: 12px 16px 11px 0;
+  font-size: 16px;
+  border: 1px solid #707070;
+}
+
+@media screen and (max-width: 767px) {
+  .price .price-items .price-contents .price-table td {
+    font-size: 12px;
+  }
+}
+
+.price .price-items .price-contents .price-table .grey {
+  background-color: #999999;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 12px 0 11px;
+}
+
+.price .price-items .price-contents .price-table .half {
+  color: #E81919;
+}
+
+.price .price-items .price-contents p {
+  color: #333333;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .price .price-items .price-contents p {
+    font-size: 12px;
+  }
+}
+
+.price .price-items .price-contents p a {
+  color: #333333;
+  text-decoration: underline;
+}
+
+/*========= Access ===========*/
+.access-section {
+  padding: 69px 0 88px;
+}
+
+.access-section h2 {
+  color: #333333;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 34.5px;
+}
+
+.access-section hr {
+  margin-bottom: 105px;
+}
+
+.access-section .map-content {
+  width: 800px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1085px) {
+  .access-section .map-content {
+    width: 90%;
+  }
+}
+
+.access-section .map-content .map {
+  text-align: center;
+  margin-bottom: 42px;
+  position: relative;
+  height: 0;
+  padding-bottom: 50%;
+  /* 縦横比の指定 */
+  overflow: hidden;
+}
+
+.access-section .map-content .map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.access-section .map-content table {
+  text-align: left;
+  margin: 0 0 38px 40px;
+  color: #333333;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .access-section .map-content table {
+    margin: 0 0 38px 10px;
+    font-size: 12px;
+  }
+}
+
+.access-section .map-content table th {
+  font-weight: normal;
+  padding-right: 54px;
+}
+
+.access-section .map-content .map-link {
+  margin: 0 auto;
+  width: 305px;
+  height: 56px;
+  text-align: center;
+  background-color: #3F51B5;
+  border-radius: 12px;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .access-section .map-content .map-link {
+    width: 244px;
+  }
+}
+
+.access-section .map-content .map-link a {
+  color: #FFFFFF;
+  line-height: 56px;
+  display: inline-block;
+  width: 305px;
+  height: 56px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .access-section .map-content .map-link a {
+    width: 244px;
+  }
+}
+
+.access-section .map-content .map-link a i {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 275px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media screen and (max-width: 767px) {
+  .access-section .map-content .map-link a i {
+    left: 90%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

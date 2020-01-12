@@ -31,6 +31,7 @@ p {
 
 a { 
   text-decoration: none;
+  cursor: pointer;
 }
 
 $layout-width-inner: 1086px;
@@ -346,6 +347,186 @@ header {
         .fas {
           padding-left: 6.5px;
           font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+/*========= price ===========*/
+.price {
+  background-color: $grey;
+  margin: 0 auto;
+  padding: 60px 0 102px;
+  h2 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 34.5px;
+  }
+  hr {
+    margin-bottom: 80.5px;
+  }
+  .price-items {
+    display: flex;
+    justify-content: center;
+    @include mq('tab') {
+      display: block;
+      width: 90%;
+      text-align: center;
+      margin: 0 auto;
+    }
+    .price-image {
+      height: 300px;
+      width: 360px;
+      margin-right: 122px;
+      @include mq('tab') {
+        margin: 0 auto 50px;
+      }
+      @include mq('sp') {
+        width: 300px * 0.9;
+        height: 360px * 0.8;
+        margin: 0 auto 50px;
+      }
+      img {
+        @include mq('sp') {
+          width: 300px * 0.9;
+          height: 360px * 0.8;
+        }
+      }
+    }
+    .price-contents {
+      .price-table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-bottom: 20px;
+        th {
+          width: 160px;
+          box-sizing: border-box;
+          padding: 12px 0 11px;
+          font-size: 16px;
+          border: 1px solid #707070;
+          @include mq('sp') {
+            font-size: 12px;
+          }
+        }
+        td {
+          width: 224px;
+          box-sizing: border-box;
+          background-color: #FFFFFF;
+          color: $black;
+          text-align: right;
+          padding: 12px 16px 11px 0;
+          font-size: 16px;
+          border: 1px solid #707070;
+          @include mq('sp') {
+            font-size: 12px;
+          }
+        }
+        .grey {
+          background-color: #999999;
+          font-weight: bold;
+          color: #FFFFFF;
+          text-align: center;
+          padding: 12px 0 11px;
+        }
+        .half {
+          color: $red;
+        }
+      }
+      p {
+        color: $black;
+        font-size: 16px;
+        @include mq('sp') {
+          font-size: 12px;
+        }
+        a {
+          color: $black;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/*========= Access ===========*/
+.access-section {
+  padding: 69px 0 88px;
+  h2 {
+    color: $black;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 34.5px;
+  }
+  hr {
+    margin-bottom: 105px;
+  }
+  .map-content {
+    width: 800px;
+    margin: 0 auto;
+    @include mq('tab') {
+      width: 90%;
+    }
+    .map {
+      text-align: center;
+      margin-bottom: 42px;
+      position : relative;
+      height : 0;
+      padding-bottom : 50%; /* 縦横比の指定 */
+      overflow : hidden;
+      iframe {
+        position : absolute;
+        top : 0;
+        left : 0;
+        width : 100%;
+        height : 100%;
+        z-index: -1;
+      }
+    }
+    table {
+      text-align: left;
+      margin: 0 0 38px 40px;
+      color: $black;
+      font-size: 16px;
+      @include mq('sp') {
+        margin: 0 0 38px 10px;
+        font-size: 12px;
+      }
+      th {
+        font-weight: normal;
+        padding-right: 54px;
+      }
+    }
+    .map-link {
+      margin: 0 auto;
+      width: 305px;
+      height: 56px;
+      text-align: center;
+      background-color: $blue;
+      border-radius: 12px;
+      position: relative;
+      @include mq('sp') {
+        width: 305px * 0.8;
+      }
+      a {
+        color: #FFFFFF;
+        line-height: 56px;
+        display: inline-block;
+        width: 305px;
+        height: 56px;
+        font-weight: bold;
+        @include mq('sp') {
+          width: 305px * 0.8;
+        }
+        i {
+          position: absolute;
+          font-size: 20px;
+          top: 50%;
+          left: 275px;
+          transform: translateY(-50%);
+          @include mq('sp') {
+            left: 90%;
+          }
         }
       }
     }
