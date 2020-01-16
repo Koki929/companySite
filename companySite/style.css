@@ -649,6 +649,7 @@ header .inner .nav-bar .nav-items a:hover {
   background-color: #3F51B5;
   border-radius: 12px;
   position: relative;
+  z-index: -1;
 }
 
 @media screen and (max-width: 767px) {
@@ -685,5 +686,270 @@ header .inner .nav-bar .nav-items a:hover {
   .access-section .map-content .map-link a i {
     left: 90%;
   }
+}
+
+/*========= Contact ===========*/
+.contact-section {
+  background-color: #EFEFEF;
+  padding: 68px 0 116px;
+}
+
+.contact-section h2 {
+  color: #333333;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 34.5px;
+}
+
+.contact-section hr {
+  margin-bottom: 50.5px;
+}
+
+.contact-section .contact-items {
+  background-color: #FFFFFF;
+  color: #333333;
+  margin: 0 auto;
+  width: 800px;
+  padding: 57.4px 43px 60px 52px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-section .contact-items .contact-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 38px;
+}
+
+.contact-section .contact-items .contact-name .name-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 19px;
+}
+
+.contact-section .contact-items .contact-name .name-header p {
+  display: inline-block;
+  background-color: #E81919;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-radius: 12px;
+  text-align: center;
+  width: 46px;
+}
+
+.contact-section .contact-items .contact-name .name-content input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #707070;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: 16px;
+  color: #CCCCCC;
+  width: 528px;
+  height: 60px;
+  padding-left: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-section .contact-items .contact-name .name-content input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.contact-section .contact-items .contact-name .name-content input::-webkit-input-placeholder {
+  color: #CCCCCC;
+}
+
+.contact-section .contact-items .contact-name .name-content input:-ms-input-placeholder {
+  color: #CCCCCC;
+}
+
+.contact-section .contact-items .contact-name .name-content input::-ms-input-placeholder {
+  color: #CCCCCC;
+}
+
+.contact-section .contact-items .contact-name .name-content input::placeholder {
+  color: #CCCCCC;
+}
+
+.contact-section .contact-items .contact-mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.contact-section .contact-items .contact-mail .mail-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 19px;
+}
+
+.contact-section .contact-items .contact-mail .mail-header p {
+  display: inline-block;
+  background-color: #E81919;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-radius: 12px;
+  text-align: center;
+  width: 46px;
+}
+
+.contact-section .contact-items .contact-mail .mail-content input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #707070;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: 16px;
+  color: #CCCCCC;
+  width: 528px;
+  height: 60px;
+  padding-left: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-section .contact-items .contact-mail .mail-content input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.contact-section .contact-items .contact-mail .mail-content input::-webkit-input-placeholder {
+  color: #CCCCCC;
+}
+
+.contact-section .contact-items .contact-mail .mail-content input:-ms-input-placeholder {
+  color: #CCCCCC;
+}
+
+.contact-section .contact-items .contact-mail .mail-content input::-ms-input-placeholder {
+  color: #CCCCCC;
+}
+
+.contact-section .contact-items .contact-mail .mail-content input::placeholder {
+  color: #CCCCCC;
+}
+
+.contact-section .contact-items .contact-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.contact-section .contact-items .contact-type .type-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 19px;
+}
+
+.contact-section .contact-items .contact-type .type-content select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent url(https://haniwaman.com/wp-content/uploads/2018/12/form-css-arrow.png) no-repeat center right 12px/16px 16px;
+  border: 1px solid #707070;
+  border-radius: 0;
+  color: #CCCCCC;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  padding-left: 16px;
+  width: 528px;
+  height: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-section .contact-items .contact-type .type-content select::-ms-expand {
+  display: none;
+}
+
+.contact-section .contact-items .contact-type .type-content select:focus {
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.contact-section .contact-items .contact-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.contact-section .contact-items .contact-text .text-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 19px;
+}
+
+.contact-section .contact-items .contact-text .text-content textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #707070;
+  border-radius: 0;
+  color: #CCCCCC;
+  font-family: inherit;
+  font-size: 16px;
+  height: 240px;
+  padding: 10px 0 0 16px;
+  width: 528px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-section .contact-items .contact-text .text-content textarea:focus {
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.contact-section .contact-items .contact-text .text-content textarea::-webkit-input-placeholder {
+  color: #CCCCCC;
+}
+
+.contact-section .contact-items .contact-text .text-content textarea:-ms-input-placeholder {
+  color: #CCCCCC;
+}
+
+.contact-section .contact-items .contact-text .text-content textarea::-ms-input-placeholder {
+  color: #CCCCCC;
+}
+
+.contact-section .contact-items .contact-text .text-content textarea::placeholder {
+  color: #CCCCCC;
 }
 /*# sourceMappingURL=style.css.map */
