@@ -722,6 +722,13 @@ header .inner .nav-bar .nav-items a:hover {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .contact-section .contact-items {
+    width: 90%;
+    padding: 57.4px 20px 60px 20px;
+  }
+}
+
 .contact-section .contact-items .contact-name {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -743,6 +750,10 @@ header .inner .nav-bar .nav-items a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-bottom: 15px;
   }
 }
 
@@ -750,6 +761,14 @@ header .inner .nav-bar .nav-items a:hover {
   font-size: 18px;
   font-weight: bold;
   padding-top: 19px;
+}
+
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-name .name-header h3 {
+    padding: 0;
+    margin-right: 10px;
+    line-height: 22px;
+  }
 }
 
 .contact-section .contact-items .contact-name .name-header p {
@@ -804,6 +823,12 @@ header .inner .nav-bar .nav-items a:hover {
   color: #CCCCCC;
 }
 
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-name .name-content input {
+    width: 100%;
+  }
+}
+
 .contact-section .contact-items .contact-mail {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -814,10 +839,36 @@ header .inner .nav-bar .nav-items a:hover {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-mail {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-mail .mail-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-bottom: 15px;
+  }
+}
+
 .contact-section .contact-items .contact-mail .mail-header h3 {
   font-size: 18px;
   font-weight: bold;
   padding-top: 19px;
+}
+
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-mail .mail-header h3 {
+    padding: 0;
+    margin-right: 10px;
+    line-height: 22px;
+  }
 }
 
 .contact-section .contact-items .contact-mail .mail-header p {
@@ -849,12 +900,6 @@ header .inner .nav-bar .nav-items a:hover {
           box-sizing: border-box;
 }
 
-@media screen and (max-width: 1085px) {
-  .contact-section .contact-items .contact-mail .mail-content input {
-    width: 478px;
-  }
-}
-
 .contact-section .contact-items .contact-mail .mail-content input:focus {
   border: 1px solid rgba(0, 0, 0, 0.32);
   -webkit-box-shadow: none;
@@ -878,6 +923,12 @@ header .inner .nav-bar .nav-items a:hover {
   color: #CCCCCC;
 }
 
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-mail .mail-content input {
+    width: 100%;
+  }
+}
+
 .contact-section .contact-items .contact-type {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -888,10 +939,28 @@ header .inner .nav-bar .nav-items a:hover {
   margin-bottom: 48px;
 }
 
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-type {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-type .type-header {
+    margin-bottom: 15px;
+  }
+}
+
 .contact-section .contact-items .contact-type .type-header h3 {
   font-size: 18px;
   font-weight: bold;
   padding-top: 19px;
+}
+
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-type .type-header h3 {
+    padding: 0;
+  }
 }
 
 .contact-section .contact-items .contact-type .type-content select {
@@ -912,12 +981,6 @@ header .inner .nav-bar .nav-items a:hover {
           box-sizing: border-box;
 }
 
-@media screen and (max-width: 1085px) {
-  .contact-section .contact-items .contact-type .type-content select {
-    width: 498px;
-  }
-}
-
 .contact-section .contact-items .contact-type .type-content select::-ms-expand {
   display: none;
 }
@@ -927,6 +990,12 @@ header .inner .nav-bar .nav-items a:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
+}
+
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-type .type-content select {
+    width: 100%;
+  }
 }
 
 .contact-section .contact-items .contact-text {
@@ -939,10 +1008,28 @@ header .inner .nav-bar .nav-items a:hover {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-text {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-text .text-header {
+    margin-bottom: 15px;
+  }
+}
+
 .contact-section .contact-items .contact-text .text-header h3 {
   font-size: 18px;
   font-weight: bold;
   padding-top: 19px;
+}
+
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-text .text-header h3 {
+    padding: 0;
+  }
 }
 
 .contact-section .contact-items .contact-text .text-content textarea {
@@ -986,12 +1073,30 @@ header .inner .nav-bar .nav-items a:hover {
   color: #CCCCCC;
 }
 
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-text .text-content textarea {
+    width: 100%;
+  }
+}
+
 .contact-section .contact-items .contact-radio {
   margin-bottom: 44px;
 }
 
 .contact-section .contact-items .contact-radio label:first-child span {
   margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-section .contact-items .contact-radio label:first-child span {
+    margin: 0 0 10px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-section .contact-items .contact-radio label {
+    display: block;
+  }
 }
 
 .contact-section .contact-items .contact-radio input {
@@ -1005,6 +1110,12 @@ header .inner .nav-bar .nav-items a:hover {
   padding: 1px 0 0 40px;
   position: relative;
   font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-section .contact-items .contact-radio input + span {
+    margin: 0 0 10px 0;
+  }
 }
 
 .contact-section .contact-items .contact-radio input + span::before {
@@ -1051,6 +1162,12 @@ header .inner .nav-bar .nav-items a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 26px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-section .contact-items .contact-check {
+    margin-bottom: 36px;
+  }
 }
 
 .contact-section .contact-items .contact-check input {
@@ -1107,6 +1224,12 @@ header .inner .nav-bar .nav-items a:hover {
   color: #333333;
 }
 
+@media screen and (max-width: 767px) {
+  .contact-section .contact-items .contact-check .privacy {
+    font-size: 12px;
+  }
+}
+
 .contact-section .contact-items .contact-check .privacy a {
   color: #333333;
   text-decoration: underline;
@@ -1120,6 +1243,7 @@ header .inner .nav-bar .nav-items a:hover {
   position: relative;
   width: 261px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .contact-section .contact-items .contact-submit input {
@@ -1142,6 +1266,12 @@ header .inner .nav-bar .nav-items a:hover {
   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
 }
 
+@media screen and (max-width: 767px) {
+  .contact-section .contact-items .contact-submit input {
+    width: 210px;
+  }
+}
+
 .contact-section .contact-items .contact-submit input:hover,
 .contact-section .contact-items .contact-submit input:focus {
   outline: none;
@@ -1160,5 +1290,11 @@ header .inner .nav-bar .nav-items a:hover {
   color: #FFFFFF;
   left: 235px;
   font-size: 20px;
+}
+
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-submit i {
+    left: 205px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

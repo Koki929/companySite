@@ -557,6 +557,10 @@ header {
     @include mq('tab') {
       width: 70%;
     }
+    @include mq('sp') {
+      width: 90%;
+      padding: 57.4px 20px 60px 20px;
+    }
     .contact-name {
       display: flex;
       justify-content: space-between;
@@ -567,11 +571,18 @@ header {
       .name-header {
         @include mq('tab') {
           display: flex;
+          justify-content: left;
+          margin-bottom: 15px;
         }
         h3 {
           font-size: 18px;
           font-weight: bold;
           padding-top: 19px;
+          @include mq('tab') {
+            padding: 0;
+            margin-right: 10px;
+            line-height: 22px;
+          }
         }
         p {
           display: inline-block;
@@ -608,6 +619,9 @@ header {
           &::placeholder {
             color: #CCCCCC;
           }
+          @include mq('tab') {
+            width: 100%;
+          }
         }
       }
     }
@@ -615,11 +629,24 @@ header {
       display: flex;
       justify-content: space-between;
       margin-bottom: 40px;
+      @include mq('tab') {
+        display: block;
+      }
       .mail-header {
+        @include mq('tab') {
+          display: flex;
+          justify-content: left;
+          margin-bottom: 15px;
+        }
         h3 {
           font-size: 18px;
           font-weight: bold;
           padding-top: 19px;
+          @include mq('tab') {
+            padding: 0;
+            margin-right: 10px;
+            line-height: 22px;
+          }
         }
         p {
           display: inline-block;
@@ -648,9 +675,6 @@ header {
           height: 60px;
           padding-left: 16px;
           box-sizing: border-box;
-          @include mq('tab') {
-            width: 478px;
-          }
           &:focus {
             border: 1px solid rgba(0, 0, 0, 0.32);
             box-shadow: none;
@@ -659,6 +683,9 @@ header {
           &::placeholder {
             color: #CCCCCC;
           }
+          @include mq('tab') {
+            width: 100%;
+          }
         }
       }
     }
@@ -666,11 +693,20 @@ header {
       display: flex;
       justify-content: space-between;
       margin-bottom: 48px;
+      @include mq('tab') {
+        display: block;
+      }
       .type-header {
+        @include mq('tab') {
+          margin-bottom: 15px;
+        }
         h3 {
         font-size: 18px;
         font-weight: bold;
         padding-top: 19px;
+        @include mq('tab') {
+          padding: 0;
+        }
         }
       }
       .type-content {
@@ -689,9 +725,6 @@ header {
           width: 528px;
           height: 60px;
           box-sizing: border-box;
-          @include mq('tab') {
-            width: 498px;
-          }
           &::-ms-expand {
             display: none;
           }
@@ -700,6 +733,9 @@ header {
             box-shadow: none;
             outline: none;
           }
+          @include mq('tab') {
+            width: 100%;
+          }
         }
       }
     }
@@ -707,11 +743,20 @@ header {
       display: flex;
       justify-content: space-between;
       margin-bottom: 40px;
+      @include mq('tab') {
+        display: block;
+      }
       .text-header {
+        @include mq('tab') {
+          margin-bottom: 15px;
+        }
         h3 {
         font-size: 18px;
         font-weight: bold;
         padding-top: 19px;
+        @include mq('tab') {
+          padding: 0;
+        }
         }
       }
       .text-content {
@@ -738,6 +783,9 @@ header {
           &::placeholder {
             color: #CCCCCC;
           }
+          @include mq('tab') {
+            width: 100%;
+          }
         }
       }
     }
@@ -745,6 +793,14 @@ header {
       margin-bottom: 44px;
       label:first-child span {
         margin: 0;
+        @include mq('sp') {
+          margin: 0 0 10px 0;
+        }
+      }
+      label {
+        @include mq('sp') {
+          display: block;
+        }
       }
       input {
         display: none;
@@ -756,6 +812,9 @@ header {
         padding: 1px 0 0 40px;
         position: relative;
         font-size: 16px;
+        @include mq('sp') {
+          margin: 0 0 10px 0;
+        }
       }
       input + span::before {
         -webkit-transform: translateY(-50%);
@@ -794,6 +853,9 @@ header {
       display: flex;
       justify-content: center;
       margin-bottom: 26px;
+      @include mq('sp') {
+        margin-bottom: 36px;
+      }
       input {
         display: none;
       }
@@ -840,6 +902,9 @@ header {
         padding-top: 5px;
         margin-left: 16px;
         color: $black;
+        @include mq('sp') {
+          font-size: 12px;
+        }
         a {
           color: $black;
           text-decoration: underline;
@@ -853,6 +918,7 @@ header {
       position: relative;
       width: 261px;
       margin: 0 auto;
+      text-align: center;
       input {
         -webkit-appearance: none;
         background-color: $blue;
@@ -870,6 +936,9 @@ header {
         border-radius: 12px;
         box-shadow: 0px 3px 6px #00000029;
         font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+        @include mq('sp') {
+          width: 210px;
+        }
       }
      input:hover,
      input:focus {
@@ -886,6 +955,9 @@ header {
         color: #FFFFFF;
         left: 235px;
         font-size: 20px;
+        @include mq('tab') {
+          left: 205px;
+        }
       }
     }
   }
