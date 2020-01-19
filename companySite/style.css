@@ -36,6 +36,7 @@ header {
   background-color: #3F51B5;
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 
 header .inner {
@@ -715,6 +716,12 @@ header .inner .nav-bar .nav-items a:hover {
           box-sizing: border-box;
 }
 
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items {
+    width: 70%;
+  }
+}
+
 .contact-section .contact-items .contact-name {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -723,6 +730,20 @@ header .inner .nav-bar .nav-items a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 38px;
+}
+
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-name {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-name .name-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .contact-section .contact-items .contact-name .name-header h3 {
@@ -828,6 +849,12 @@ header .inner .nav-bar .nav-items a:hover {
           box-sizing: border-box;
 }
 
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-mail .mail-content input {
+    width: 478px;
+  }
+}
+
 .contact-section .contact-items .contact-mail .mail-content input:focus {
   border: 1px solid rgba(0, 0, 0, 0.32);
   -webkit-box-shadow: none;
@@ -885,6 +912,12 @@ header .inner .nav-bar .nav-items a:hover {
           box-sizing: border-box;
 }
 
+@media screen and (max-width: 1085px) {
+  .contact-section .contact-items .contact-type .type-content select {
+    width: 498px;
+  }
+}
+
 .contact-section .contact-items .contact-type .type-content select::-ms-expand {
   display: none;
 }
@@ -903,7 +936,7 @@ header .inner .nav-bar .nav-items a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 .contact-section .contact-items .contact-text .text-header h3 {
@@ -951,5 +984,181 @@ header .inner .nav-bar .nav-items a:hover {
 
 .contact-section .contact-items .contact-text .text-content textarea::placeholder {
   color: #CCCCCC;
+}
+
+.contact-section .contact-items .contact-radio {
+  margin-bottom: 44px;
+}
+
+.contact-section .contact-items .contact-radio label:first-child span {
+  margin: 0;
+}
+
+.contact-section .contact-items .contact-radio input {
+  display: none;
+}
+
+.contact-section .contact-items .contact-radio input + span {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 0 0 25px;
+  padding: 1px 0 0 40px;
+  position: relative;
+  font-size: 16px;
+}
+
+.contact-section .contact-items .contact-radio input + span::before {
+  -webkit-transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid #707070;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 28px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+}
+
+.contact-section .contact-items .contact-radio input + span::after {
+  -webkit-transform: translateY(-50%);
+  background: #3F51B5;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  content: "";
+  height: 14px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 14px;
+}
+
+.contact-section .contact-items .contact-radio input:checked + span::after {
+  opacity: 1;
+}
+
+.contact-section .contact-items .contact-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 26px;
+}
+
+.contact-section .contact-items .contact-check input {
+  display: none;
+}
+
+.contact-section .contact-items .contact-check input + span {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 20px;
+  padding: 0 0 0 1.2em;
+  position: relative;
+}
+
+.contact-section .contact-items .contact-check input + span::before {
+  -webkit-transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid #707070;
+  content: "";
+  display: block;
+  height: 30px;
+  top: 50%;
+  left: 0;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 30px;
+}
+
+.contact-section .contact-items .contact-check input + span::after {
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  border-bottom: 4.2px solid #3F51B5;
+  border-left: 4.2px solid #3F51B5;
+  content: "";
+  display: block;
+  height: 0.6em;
+  left: 6px;
+  margin-top: -0.2em;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 1em;
+}
+
+.contact-section .contact-items .contact-check input:checked + span::after {
+  opacity: 1;
+}
+
+.contact-section .contact-items .contact-check .privacy {
+  padding-top: 5px;
+  margin-left: 16px;
+  color: #333333;
+}
+
+.contact-section .contact-items .contact-check .privacy a {
+  color: #333333;
+  text-decoration: underline;
+}
+
+.contact-section .contact-items .contact-check .privacy a:hover {
+  opacity: 0.6;
+}
+
+.contact-section .contact-items .contact-submit {
+  position: relative;
+  width: 261px;
+  margin: 0 auto;
+}
+
+.contact-section .contact-items .contact-submit input {
+  -webkit-appearance: none;
+  background-color: #3F51B5;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  width: 261px;
+  height: 56px;
+  text-decoration: none;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+}
+
+.contact-section .contact-items .contact-submit input:hover,
+.contact-section .contact-items .contact-submit input:focus {
+  outline: none;
+}
+
+.contact-section .contact-items .contact-submit input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+
+.contact-section .contact-items .contact-submit i {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #FFFFFF;
+  left: 235px;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -57,7 +57,7 @@ header {
   background-color: $blue;
   position: fixed;
   width: 100%;
-
+  z-index: 100;
   .inner {
     display: flex;
     justify-content: space-between;
@@ -554,11 +554,20 @@ header {
     width: 800px;
     padding: 57.4px 43px 60px 52px;
     box-sizing: border-box;
+    @include mq('tab') {
+      width: 70%;
+    }
     .contact-name {
       display: flex;
       justify-content: space-between;
       margin-bottom: 38px;
+      @include mq('tab') {
+        display: block;
+      }
       .name-header {
+        @include mq('tab') {
+          display: flex;
+        }
         h3 {
           font-size: 18px;
           font-weight: bold;
@@ -639,6 +648,9 @@ header {
           height: 60px;
           padding-left: 16px;
           box-sizing: border-box;
+          @include mq('tab') {
+            width: 478px;
+          }
           &:focus {
             border: 1px solid rgba(0, 0, 0, 0.32);
             box-shadow: none;
@@ -677,6 +689,9 @@ header {
           width: 528px;
           height: 60px;
           box-sizing: border-box;
+          @include mq('tab') {
+            width: 498px;
+          }
           &::-ms-expand {
             display: none;
           }
@@ -691,7 +706,7 @@ header {
     .contact-text {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 48px;
+      margin-bottom: 40px;
       .text-header {
         h3 {
         font-size: 18px;
@@ -724,6 +739,153 @@ header {
             color: #CCCCCC;
           }
         }
+      }
+    }
+    .contact-radio {
+      margin-bottom: 44px;
+      label:first-child span {
+        margin: 0;
+      }
+      input {
+        display: none;
+      }
+      input + span {
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 0 0 25px;
+        padding: 1px 0 0 40px;
+        position: relative;
+        font-size: 16px;
+      }
+      input + span::before {
+        -webkit-transform: translateY(-50%);
+        background: #fff;
+        border: 1px solid #707070;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 28px;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 28px;
+      }
+      input + span::after {
+        -webkit-transform: translateY(-50%);
+        background: $blue;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        content: "";
+        height: 14px;
+        left: 7px;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.3s ease 0s;
+        width: 14px;
+      }
+      input:checked + span::after {
+        opacity: 1;
+      }
+    }
+    .contact-check {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 26px;
+      input {
+        display: none;
+      }
+      input + span {
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 20px;
+        padding: 0 0 0 1.2em;
+        position: relative;
+      }
+      input + span::before {
+        -webkit-transform: translateY(-50%);
+        background: #fff;
+        border: 1px solid #707070;
+        content: "";
+        display: block;
+        height: 30px;
+        top: 50%;
+        left: 0;
+        position: absolute;
+        transform: translateY(-50%);
+        width: 30px;
+      }
+      input + span::after {
+        -webkit-transform: translateY(-50%) rotate(-45deg);
+        border-bottom: 4.2px solid $blue;
+        border-left: 4.2px solid $blue;
+        content: "";
+        display: block;
+        height: 0.6em;
+        left: 6px;
+        margin-top: -0.2em;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+        transition: all 0.3s ease 0s;
+        width: 1em;
+      }
+      input:checked + span::after {
+        opacity: 1;
+      }
+      .privacy {
+        padding-top: 5px;
+        margin-left: 16px;
+        color: $black;
+        a {
+          color: $black;
+          text-decoration: underline;
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+    .contact-submit {
+      position: relative;
+      width: 261px;
+      margin: 0 auto;
+      input {
+        -webkit-appearance: none;
+        background-color: $blue;
+        background-image: none;
+        border: none;
+        border-radius: 0;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 22px;
+        font-weight: bold;
+        width: 261px;
+        height: 56px;
+        text-decoration: none;
+        border-radius: 12px;
+        box-shadow: 0px 3px 6px #00000029;
+        font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+      }
+     input:hover,
+     input:focus {
+        outline: none;
+      }
+     input::-moz-focus-inner {
+        border: none;
+        padding: 0;
+      }
+      i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #FFFFFF;
+        left: 235px;
+        font-size: 20px;
       }
     }
   }
