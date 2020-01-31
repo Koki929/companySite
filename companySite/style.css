@@ -60,7 +60,7 @@ header .inner {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   header .inner {
     width: 100%;
   }
@@ -81,7 +81,7 @@ header .inner .logo img {
   height: 39px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   header .inner .nav-bar {
     display: none;
   }
@@ -126,7 +126,7 @@ header .inner .nav-bar .nav-items a:hover {
   padding-top: 240px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .mainvisual h2 {
     font-size: 54.4px;
   }
@@ -144,7 +144,7 @@ header .inner .nav-bar .nav-items a:hover {
   margin-bottom: 82px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .mainvisual h3 {
     font-size: 30.4px;
   }
@@ -172,7 +172,7 @@ header .inner .nav-bar .nav-items a:hover {
   opacity: 0.6;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .mainvisual a {
     font-size: 30.4px;
     padding: 13.6px 64.8px;
@@ -189,15 +189,17 @@ header .inner .nav-bar .nav-items a:hover {
 /*========= card ===========*/
 .cardSection {
   background-color: #EFEFEF;
-  padding: 59px 20px 128px 20px;
+  padding: 59px 0 128px 0;
 }
 
 .cardSection .inner {
   width: 1086px;
   margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .cardSection .inner {
     width: 100%;
   }
@@ -224,7 +226,7 @@ header .inner .nav-bar .nav-items a:hover {
 
 .cardSection .inner .cards .card {
   background-color: #FFFFFF;
-  width: calc(33.33333333% - 60px / 3);
+  width: calc(33.3333333333% - 60px / 3);
   margin: 0 30px 20px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -235,7 +237,7 @@ header .inner .nav-bar .nav-items a:hover {
   margin-right: 0;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .cardSection .inner .cards .card {
     width: calc(50% - 30px / 2);
   }
@@ -289,7 +291,7 @@ header .inner .nav-bar .nav-items a:hover {
   width: 845px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .news {
     width: 80%;
   }
@@ -339,7 +341,7 @@ header .inner .nav-bar .nav-items a:hover {
   line-height: 30px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .news .news-contents .news-content time {
     font-size: 12.8px;
   }
@@ -359,7 +361,7 @@ header .inner .nav-bar .nav-items a:hover {
   height: 30px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .news .news-contents .news-content .label {
     margin: 0 24px;
   }
@@ -387,7 +389,7 @@ header .inner .nav-bar .nav-items a:hover {
   opacity: 0.6;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .news .news-contents .news-content .label a {
     width: 80px;
     font-size: 12.8px;
@@ -419,7 +421,7 @@ header .inner .nav-bar .nav-items a:hover {
   transition: all 0.3s ease 0s;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .news .news-contents .news-content .news-title {
     width: 80%;
   }
@@ -441,7 +443,7 @@ header .inner .nav-bar .nav-items a:hover {
   opacity: 0.6;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .news .news-contents .news-content .news-title a {
     font-size: 12.8px;
   }
@@ -500,7 +502,7 @@ header .inner .nav-bar .nav-items a:hover {
           justify-content: center;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .price .price-items {
     display: block;
     width: 90%;
@@ -515,7 +517,7 @@ header .inner .nav-bar .nav-items a:hover {
   margin-right: 122px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .price .price-items .price-image {
     margin: 0 auto 50px;
   }
@@ -631,7 +633,7 @@ header .inner .nav-bar .nav-items a:hover {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .access-section .map-content {
     width: 90%;
   }
@@ -760,7 +762,7 @@ header .inner .nav-bar .nav-items a:hover {
           box-sizing: border-box;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items {
     width: 70%;
   }
@@ -783,13 +785,13 @@ header .inner .nav-bar .nav-items a:hover {
   margin-bottom: 38px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-name {
     display: block;
   }
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-name .name-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -807,7 +809,7 @@ header .inner .nav-bar .nav-items a:hover {
   padding-top: 19px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-name .name-header h3 {
     padding: 0;
     margin-right: 10px;
@@ -867,7 +869,7 @@ header .inner .nav-bar .nav-items a:hover {
   color: #CCCCCC;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-name .name-content input {
     width: 100%;
   }
@@ -883,13 +885,13 @@ header .inner .nav-bar .nav-items a:hover {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-mail {
     display: block;
   }
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-mail .mail-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -907,7 +909,7 @@ header .inner .nav-bar .nav-items a:hover {
   padding-top: 19px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-mail .mail-header h3 {
     padding: 0;
     margin-right: 10px;
@@ -967,7 +969,7 @@ header .inner .nav-bar .nav-items a:hover {
   color: #CCCCCC;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-mail .mail-content input {
     width: 100%;
   }
@@ -983,13 +985,13 @@ header .inner .nav-bar .nav-items a:hover {
   margin-bottom: 48px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-type {
     display: block;
   }
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-type .type-header {
     margin-bottom: 15px;
   }
@@ -1001,7 +1003,7 @@ header .inner .nav-bar .nav-items a:hover {
   padding-top: 19px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-type .type-header h3 {
     padding: 0;
   }
@@ -1036,7 +1038,7 @@ header .inner .nav-bar .nav-items a:hover {
   outline: none;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-type .type-content select {
     width: 100%;
   }
@@ -1052,13 +1054,13 @@ header .inner .nav-bar .nav-items a:hover {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-text {
     display: block;
   }
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-text .text-header {
     margin-bottom: 15px;
   }
@@ -1070,7 +1072,7 @@ header .inner .nav-bar .nav-items a:hover {
   padding-top: 19px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-text .text-header h3 {
     padding: 0;
   }
@@ -1117,7 +1119,7 @@ header .inner .nav-bar .nav-items a:hover {
   color: #CCCCCC;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-text .text-content textarea {
     width: 100%;
   }
@@ -1342,7 +1344,7 @@ header .inner .nav-bar .nav-items a:hover {
   font-size: 20px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-submit i {
     left: 205px;
   }
@@ -1356,7 +1358,7 @@ header .inner .nav-bar .nav-items a:hover {
   position: relative;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .footer-section {
     padding: 74px 0 31px;
   }
@@ -1372,7 +1374,7 @@ header .inner .nav-bar .nav-items a:hover {
   margin-bottom: 91px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .footer-section .footer-contents {
     display: block;
     text-align: center;
@@ -1380,7 +1382,7 @@ header .inner .nav-bar .nav-items a:hover {
   }
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .footer-section .footer-contents .footer-info {
     margin-bottom: 30px;
   }
@@ -1392,7 +1394,7 @@ header .inner .nav-bar .nav-items a:hover {
   width: 200px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .footer-section .footer-contents .footer-info .footer-logo {
     margin: 0 auto 15px;
   }
@@ -1418,7 +1420,7 @@ header .inner .nav-bar .nav-items a:hover {
   padding-top: 10px;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1104px) {
   .footer-section .footer-contents .footer-links {
     margin-bottom: 30px;
   }

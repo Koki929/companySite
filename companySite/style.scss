@@ -44,8 +44,8 @@ $layout-width-inner: 1086px;
 
 $breakpoints: (
   "sp": "screen and (max-width: 767px)",
-  "tab": "screen and (max-width: #{$layout-width-inner - 1px})",
-  "pc": "screen and (min-width: #{$layout-width-inner})",
+  "tab": "screen and (max-width: 1104px)",
+  "pc": "screen and (min-width: 1105px)",
 );
 
 $tab-per: 0.8;
@@ -105,9 +105,7 @@ header {
         }
       }
     }
-
   }
-
 }
 
 /*========= main visual ===========*/
@@ -165,16 +163,16 @@ header {
       padding: 17px*$sp-per 81px*$sp-per;
     }
   }
-
 }
 
 /*========= card ===========*/
 .cardSection {
   background-color: $grey;
-  padding: 59px 20px 128px 20px;
+  padding: 59px 0 128px 0;
   .inner {
     width: $layout-width-inner;
     margin: 0 auto;
+    box-sizing: border-box;
     @include mq('tab') {
       width: 100%;
     }
@@ -192,7 +190,7 @@ header {
       flex-wrap: wrap;
       .card {
         background-color: #FFFFFF;
-        width: calc(33.33333333% - 60px / 3);
+        width: calc(33.3333333333% - 60px / 3);
         margin: 0 30px 20px 0;
         box-sizing: border-box;
         border-radius: 4px;
