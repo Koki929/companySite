@@ -8,4 +8,9 @@ var swiper = new Swiper('.swiper-container', {
         delay: 3000,
         disableOnInteraction: true
     },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
 });
