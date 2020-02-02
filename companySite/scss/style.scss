@@ -118,9 +118,6 @@ header {
 
 /*========= main visual ===========*/
 .mainvisual {
-  background-image: url(images/mainvisual.png);
-  background-position: center;
-  background-size: cover;
   height: 700px;
   text-align: center;
   @include mq('tab') {

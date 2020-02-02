@@ -122,9 +122,6 @@ header .inner .nav-bar .nav-items a:hover {
 
 /*========= main visual ===========*/
 .mainvisual {
-  background-image: url(images/mainvisual.png);
-  background-position: center;
-  background-size: cover;
   height: 700px;
   text-align: center;
 }
