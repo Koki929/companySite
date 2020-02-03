@@ -1,3 +1,4 @@
+// Swiper
 var swiper = new Swiper('.swiper-container', {
     navigation: {
         nextEl: '.swiper-button-next',
@@ -14,3 +15,6 @@ var swiper = new Swiper('.swiper-container', {
         clickable: true,
     },
 });
+
+// Wow
+new WOW().init();
