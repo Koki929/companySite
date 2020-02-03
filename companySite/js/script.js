@@ -19,8 +19,13 @@ var swiper = new Swiper('.swiper-container', {
 // Wow
 new WOW().init();
 
-// Hiraku
-$(".offcanvas-left").hiraku({
-    btn:"#offcanvas-btn-left",
-    direction:"right"
+// drawer
+$(document).ready(function() {
+    $('.drawer').drawer();
+});
+
+$(function() {
+    $('.hamburger').click(function() {
+      $('.bar1, .bar2, .bar3').toggleClass('open');
+    })
 });
