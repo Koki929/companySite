@@ -97,6 +97,9 @@ header {
 
     .nav-bar {
       @include mq('tab') {
+        margin-right: 30px;
+      }
+      @include mq('sp') {
         display: none;
       }
       .nav-items {

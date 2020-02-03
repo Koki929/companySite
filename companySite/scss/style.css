@@ -97,6 +97,12 @@ header .inner .logo img {
 
 @media screen and (max-width: 1104px) {
   header .inner .nav-bar {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .inner .nav-bar {
     display: none;
   }
 }
