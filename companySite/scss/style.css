@@ -126,6 +126,16 @@ header .inner .nav-bar .nav-items a:hover {
   border-bottom: solid 2px #E81919;
 }
 
+header .inner button {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  header .inner button {
+    display: block;
+  }
+}
+
 /*========= main visual ===========*/
 .mainvisual {
   height: 700px;

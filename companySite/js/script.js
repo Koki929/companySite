@@ -18,3 +18,9 @@ var swiper = new Swiper('.swiper-container', {
 
 // Wow
 new WOW().init();
+
+// Hiraku
+$(".offcanvas-left").hiraku({
+    btn:"#offcanvas-btn-left",
+    direction:"right"
+});
