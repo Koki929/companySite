@@ -115,12 +115,6 @@ header {
         }
       }
     }
-    button {
-      display: none;
-      @include mq('sp') {
-        display: block;
-      }
-    }
   }
 }
 
