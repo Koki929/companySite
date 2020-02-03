@@ -25,7 +25,7 @@ $(document).ready(function() {
 });
 
 $(function() {
-    $('.hamburger').click(function() {
+    $('.hamburger, .drawer-overlay').click(function() {
       $('.bar1, .bar2, .bar3').toggleClass('open');
     })
 });

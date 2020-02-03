@@ -42,7 +42,7 @@ header {
   background-color: #3F51B5;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
 }
 
 header .inner {
@@ -183,6 +183,44 @@ header .inner button .bar3.open {
   top: 38px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+header .inner .drawer-nav {
+  z-index: 50;
+  width: 200px;
+}
+
+header .inner .drawer-nav li {
+  border-bottom: 1px solid #EEE;
+  position: relative;
+}
+
+header .inner .drawer-nav li:after {
+  position: absolute;
+  content: '\f054';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #707070;
+  top: 22px;
+  left: 180px;
+  font-size: 12px;
+}
+
+header .inner .drawer-nav a {
+  text-decoration: none;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #707070;
+  padding: 15px 0 14px 20px;
+}
+
+header .inner .drawer-nav a:hover {
+  opacity: 0.6;
+}
+
+.drawer-overlay {
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 /*========= main visual ===========*/
@@ -1547,8 +1585,13 @@ header .inner button .bar3.open {
 
 @media screen and (max-width: 1104px) {
   .contact-section .contact-items .contact-submit i {
-    left: 170px;
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-section .contact-items .contact-submit i {
+    left: 160px;
   }
 }
 
