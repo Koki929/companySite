@@ -38,14 +38,14 @@ hr {
 }
 
 /*========= header ===========*/
-header {
+.header {
   background-color: #3F51B5;
   position: fixed;
   width: 100%;
   z-index: 10;
 }
 
-header .inner {
+.header .inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,84 +61,84 @@ header .inner {
 }
 
 @media screen and (max-width: 1104px) {
-  header .inner {
+  .header .inner {
     width: 100%;
     height: 80px;
   }
 }
 
 @media screen and (max-width: 1104px) {
-  header .inner .logo {
+  .header .inner .logo {
     margin-left: 20px;
   }
 }
 
-header .inner .logo h1 {
+.header .inner .logo h1 {
   height: 39px;
 }
 
 @media screen and (max-width: 767px) {
-  header .inner .logo h1 {
+  .header .inner .logo h1 {
     height: 45px;
   }
 }
 
-header .inner .logo img {
+.header .inner .logo img {
   width: 200px;
   height: 39px;
 }
 
 @media screen and (max-width: 767px) {
-  header .inner .logo img {
+  .header .inner .logo img {
     height: 29px;
     width: 150px;
   }
 }
 
 @media screen and (max-width: 1104px) {
-  header .inner .nav-bar {
+  .header .inner .nav-bar {
     margin-right: 30px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  header .inner .nav-bar {
+  .header .inner .nav-bar {
     display: none;
   }
 }
 
-header .inner .nav-bar .nav-items {
+.header .inner .nav-bar .nav-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .inner .nav-bar .nav-items li {
+.header .inner .nav-bar .nav-items li {
   margin-left: 30px;
 }
 
-header .inner .nav-bar .nav-items a {
+.header .inner .nav-bar .nav-items a {
   color: #FFFFFF;
   font-size: 16px;
 }
 
-header .inner .nav-bar .nav-items a:hover {
+.header .inner .nav-bar .nav-items a:hover {
   border-bottom: solid 2px #E81919;
 }
 
-header .inner button {
+.header button {
   display: none;
   margin: 0 18px 0 0;
   padding: 0;
 }
 
 @media screen and (max-width: 767px) {
-  header .inner button {
+  .header button {
     display: block;
   }
 }
 
-header .inner button .hamburger {
+.header button .hamburger {
   position: relative;
   width: 50px;
   height: 80px;
@@ -146,7 +146,7 @@ header .inner button .hamburger {
           box-sizing: border-box;
 }
 
-header .inner button span {
+.header button span {
   display: block;
   width: 28px;
   height: 4px;
@@ -157,70 +157,74 @@ header .inner button span {
   transition: all 0.5s ease;
 }
 
-header .inner button .bar1 {
+.header button .bar1 {
   top: 27px;
 }
 
-header .inner button .bar2 {
+.header button .bar2 {
   top: 38px;
 }
 
-header .inner button .bar3 {
+.header button .bar3 {
   bottom: 27px;
 }
 
-header .inner button .bar1.open {
+.header button .bar1.open {
   top: 38px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-header .inner button .bar2.open {
+.header button .bar2.open {
   opacity: 0;
 }
 
-header .inner button .bar3.open {
+.header button .bar3.open {
   top: 38px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-header .inner .drawer-nav {
+.header .drawer-nav {
   z-index: 50;
   width: 200px;
 }
 
-header .inner .drawer-nav li {
-  border-bottom: 1px solid #EEE;
+.header .drawer-nav li {
+  border-bottom: 1px dotted #707070;
   position: relative;
 }
 
-header .inner .drawer-nav li:after {
-  position: absolute;
-  content: '\f054';
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: #707070;
-  top: 22px;
-  left: 180px;
-  font-size: 12px;
-}
-
-header .inner .drawer-nav a {
+.header .drawer-nav a {
   text-decoration: none;
   font-size: 16px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   color: #707070;
-  padding: 15px 0 14px 20px;
+  padding: 13px 0 12px 20px;
 }
 
-header .inner .drawer-nav a:hover {
+.header .drawer-nav a:hover {
   opacity: 0.6;
+}
+
+.header .drawer-nav a:after {
+  position: absolute;
+  content: '\f054';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #707070;
+  top: 19px;
+  left: 180px;
+  font-size: 12px;
 }
 
 .drawer-overlay {
   background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.drawer--right.drawer-open .drawer-hamburger {
+  right: 200px !important;
 }
 
 /*========= main visual ===========*/

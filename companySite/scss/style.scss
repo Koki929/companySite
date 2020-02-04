@@ -59,7 +59,7 @@ $sp-per: 0.35;
 }
 
 /*========= header ===========*/
-header {
+.header {
   background-color: $blue;
   position: fixed;
   width: 100%;
@@ -115,81 +115,84 @@ header {
         }
       }
     }
-    button {
-      display: none;
-      margin: 0 18px 0 0;
-      padding: 0;
-      @include mq('sp') {
-        display: block;
-      }
-      .hamburger {
-        position: relative;
-        width: 50px;
-        height: 80px;
-        box-sizing: border-box;
-      }
-      span {
-        display: block;
-        width: 28px;
-        height: 4px;
-        background: #FFF;
-        position: absolute;
-        left: 4px;
-        transition: all 0.5s ease;
-      }
-      .bar1 { 
-        top: 27px;
-      }
-      .bar2 {
-        top: 38px;
-      }
-      .bar3 {
-        bottom: 27px;
-      }
-      .bar1.open {
-        top: 38px;
-        transform: rotate(45deg);
-      }
-      .bar2.open { 
-        opacity: 0; 
-      }
-      .bar3.open {
-        top: 38px;
-        transform: rotate(-45deg);
-      }
+  }
+  button {
+    display: none;
+    margin: 0 18px 0 0;
+    padding: 0;
+    @include mq('sp') {
+      display: block;
     }
-    .drawer-nav {
-      z-index: 50;
-      width: 200px;
-      li {
-        border-bottom: 1px solid #EEE;
-        position: relative;
-        &:after {
-          position: absolute;
-          content: '\f054';
-          font-family: "Font Awesome 5 Free";
-          font-weight: 900;
-          color: #707070;
-          top: 22px;
-          left: 180px;
-          font-size: 12px;
-        }
+    .hamburger {
+      position: relative;
+      width: 50px;
+      height: 80px;
+      box-sizing: border-box;
+    }
+    span {
+      display: block;
+      width: 28px;
+      height: 4px;
+      background: #FFF;
+      position: absolute;
+      left: 4px;
+      transition: all 0.5s ease;
+    }
+    .bar1 { 
+      top: 27px;
+    }
+    .bar2 {
+      top: 38px;
+    }
+    .bar3 {
+      bottom: 27px;
+    }
+    .bar1.open {
+      top: 38px;
+      transform: rotate(45deg);
+    }
+    .bar2.open { 
+      opacity: 0; 
+    }
+    .bar3.open {
+      top: 38px;
+      transform: rotate(-45deg);
+    }
+  }
+  .drawer-nav {
+    z-index: 50;
+    width: 200px;
+    li {
+      border-bottom: 1px dotted #707070;
+      position: relative;
+    }
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      transition: all 0.3s ease 0s;
+      color: #707070;
+      padding: 13px 0 12px 20px;
+      &:hover {
+        opacity: 0.6;
       }
-      a {
-        text-decoration: none;
-        font-size: 16px;
-        transition: all 0.3s ease 0s;
+      &:after {
+        position: absolute;
+        content: '\f054';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
         color: #707070;
-        padding: 15px 0 14px 20px;
-        &:hover {
-          opacity: 0.6;
-        }
+        top: 19px;
+        left: 180px;
+        font-size: 12px;
       }
     }
   }
 }
 .drawer-overlay {
   background-color: rgba(0,0,0,.8) !important;
+}
+.drawer--right.drawer-open .drawer-hamburger {
+  right: 200px !important;
 }
 
 /*========= main visual ===========*/
