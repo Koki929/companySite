@@ -38,6 +38,103 @@ hr {
 }
 
 /*========= header ===========*/
+button {
+  display: none;
+  margin: 0 18px 0 0;
+  padding: 0;
+  position: fixed;
+  z-index: 100;
+  top: 200px;
+  left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  button {
+    display: block;
+  }
+}
+
+button .hamburger {
+  position: relative;
+  width: 50px;
+  height: 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button span {
+  display: block;
+  width: 28px;
+  height: 4px;
+  background: #FFF;
+  position: absolute;
+  left: 4px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+button .bar1 {
+  top: 27px;
+}
+
+button .bar2 {
+  top: 38px;
+}
+
+button .bar3 {
+  bottom: 27px;
+}
+
+button .bar1.open {
+  top: 38px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+button .bar2.open {
+  opacity: 0;
+}
+
+button .bar3.open {
+  top: 38px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.drawer-nav {
+  z-index: 50;
+  width: 200px;
+}
+
+.drawer-nav li {
+  border-bottom: 1px dotted #707070;
+  position: relative;
+}
+
+.drawer-nav a {
+  text-decoration: none;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #707070;
+  padding: 13px 0 12px 20px;
+}
+
+.drawer-nav a:hover {
+  opacity: 0.6;
+}
+
+.drawer-nav a:after {
+  position: absolute;
+  content: '\f054';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #707070;
+  top: 19px;
+  left: 180px;
+  font-size: 12px;
+}
+
 .header {
   background-color: #3F51B5;
   position: fixed;
@@ -124,99 +221,6 @@ hr {
 
 .header .inner .nav-bar .nav-items a:hover {
   border-bottom: solid 2px #E81919;
-}
-
-.header button {
-  display: none;
-  margin: 0 18px 0 0;
-  padding: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .header button {
-    display: block;
-  }
-}
-
-.header button .hamburger {
-  position: relative;
-  width: 50px;
-  height: 80px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.header button span {
-  display: block;
-  width: 28px;
-  height: 4px;
-  background: #FFF;
-  position: absolute;
-  left: 4px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.header button .bar1 {
-  top: 27px;
-}
-
-.header button .bar2 {
-  top: 38px;
-}
-
-.header button .bar3 {
-  bottom: 27px;
-}
-
-.header button .bar1.open {
-  top: 38px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.header button .bar2.open {
-  opacity: 0;
-}
-
-.header button .bar3.open {
-  top: 38px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.header .drawer-nav {
-  z-index: 50;
-  width: 200px;
-}
-
-.header .drawer-nav li {
-  border-bottom: 1px dotted #707070;
-  position: relative;
-}
-
-.header .drawer-nav a {
-  text-decoration: none;
-  font-size: 16px;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  color: #707070;
-  padding: 13px 0 12px 20px;
-}
-
-.header .drawer-nav a:hover {
-  opacity: 0.6;
-}
-
-.header .drawer-nav a:after {
-  position: absolute;
-  content: '\f054';
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: #707070;
-  top: 19px;
-  left: 180px;
-  font-size: 12px;
 }
 
 .drawer-overlay {

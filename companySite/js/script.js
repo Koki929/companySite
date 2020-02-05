@@ -26,6 +26,6 @@ $(document).ready(function() {
 
 $(function() {
     $('.hamburger, .drawer-overlay, .drawer-menu-item').click(function() {
-      $('.bar1, .bar2, .bar3').toggleClass('open');
+      $('.bar1, .bar2, .bar3, .header').toggleClass('open');
     })
 });
