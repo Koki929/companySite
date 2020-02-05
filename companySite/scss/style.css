@@ -38,22 +38,16 @@ hr {
 }
 
 /*========= drawer ===========*/
-button {
-  display: none;
+.drawer-hamburger {
   margin: 0 18px 0 0;
-  padding: 0;
+  padding: 0 !important;
   position: fixed;
-  top: 200px;
-  right: 10px;
+  top: 80px;
+  right: 18px;
 }
 
-@media screen and (max-width: 767px) {
-  button {
-    display: block;
-  }
-}
-
-button .hamburger {
+.drawer-hamburger .hamburger {
+  display: none;
   position: relative;
   width: 50px;
   height: 80px;
@@ -61,7 +55,13 @@ button .hamburger {
           box-sizing: border-box;
 }
 
-button span {
+@media screen and (max-width: 767px) {
+  .drawer-hamburger .hamburger {
+    display: block;
+  }
+}
+
+.drawer-hamburger span {
   display: block;
   width: 28px;
   height: 4px;
@@ -72,36 +72,36 @@ button span {
   transition: all 0.5s ease;
 }
 
-button .bar1 {
+.drawer-hamburger .bar1 {
   top: 27px;
 }
 
-button .bar2 {
+.drawer-hamburger .bar2 {
   top: 38px;
 }
 
-button .bar3 {
+.drawer-hamburger .bar3 {
   bottom: 27px;
 }
 
-button .bar1.open {
+.drawer-hamburger .bar1.open {
   top: 38px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-button .bar2.open {
+.drawer-hamburger .bar2.open {
   opacity: 0;
 }
 
-button .bar3.open {
+.drawer-hamburger .bar3.open {
   top: 38px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
 .drawer-nav {
-  width: 200px;
+  width: 200px !important;
   z-index: 3;
 }
 
@@ -143,11 +143,15 @@ button .bar3.open {
 }
 
 /*========= header ===========*/
+.header.open {
+  z-index: 1;
+}
+
 .header {
   background-color: #3F51B5;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .header .inner {
@@ -232,6 +236,10 @@ button .bar3.open {
 }
 
 /*========= main visual ===========*/
+.mainvisual.open {
+  z-index: 0;
+}
+
 .mainvisual {
   height: 700px;
   text-align: center;

@@ -59,21 +59,21 @@ $sp-per: 0.35;
 }
 
 /*========= drawer ===========*/
-button {
-  display: none;
+.drawer-hamburger {
   margin: 0 18px 0 0;
-  padding: 0;
+  padding: 0 !important;
   position: fixed;
-  top: 200px;
-  right: 10px;
-  @include mq('sp') {
-    display: block;
-  }
+  top: 80px;
+  right: 18px;
   .hamburger {
+    display: none;
     position: relative;
     width: 50px;
     height: 80px;
     box-sizing: border-box;
+    @include mq('sp') {
+      display: block;
+    }
   }
   span {
     display: block;
@@ -106,7 +106,7 @@ button {
   }
 }
 .drawer-nav {
-  width: 200px;
+  width: 200px !important;
   z-index: 3;
   li {
     border-bottom: 1px dotted #707070;
@@ -141,11 +141,14 @@ button {
 }
 
 /*========= header ===========*/
+.header.open {
+  z-index: 1;
+}
 .header {
   background-color: $blue;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   .inner {
     display: flex;
     justify-content: space-between;
@@ -201,6 +204,9 @@ button {
 }
 
 /*========= main visual ===========*/
+.mainvisual.open {
+  z-index: 0;
+}
 .mainvisual {
   height: 700px;
   text-align: center;
