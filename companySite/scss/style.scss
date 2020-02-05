@@ -58,15 +58,14 @@ $sp-per: 0.35;
   }
 }
 
-/*========= header ===========*/
+/*========= drawer ===========*/
 button {
   display: none;
   margin: 0 18px 0 0;
   padding: 0;
   position: fixed;
-  z-index: 100;
   top: 200px;
-  left: 10px;
+  right: 10px;
   @include mq('sp') {
     display: block;
   }
@@ -107,8 +106,8 @@ button {
   }
 }
 .drawer-nav {
-  z-index: 50;
   width: 200px;
+  z-index: 3;
   li {
     border-bottom: 1px dotted #707070;
     position: relative;
@@ -134,11 +133,19 @@ button {
     }
   }
 }
+.drawer-overlay {
+  background-color: rgba(0,0,0,.8) !important;
+}
+.drawer--right.drawer-open .drawer-hamburger {
+  right: 200px !important;
+}
+
+/*========= header ===========*/
 .header {
   background-color: $blue;
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 2;
   .inner {
     display: flex;
     justify-content: space-between;
@@ -191,12 +198,6 @@ button {
       }
     }
   }
-}
-.drawer-overlay {
-  background-color: rgba(0,0,0,.8) !important;
-}
-.drawer--right.drawer-open .drawer-hamburger {
-  right: 200px !important;
 }
 
 /*========= main visual ===========*/
