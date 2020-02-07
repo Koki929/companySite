@@ -969,6 +969,73 @@ hr {
   }
 }
 
+/*========= Q & A ===========*/
+.qa-section {
+  margin: 0 auto;
+  padding: 59px 0 128px;
+  background-color: #E1E4E6;
+}
+
+@media screen and (max-width: 767px) {
+  .qa-section {
+    padding: 50px 0 80px;
+  }
+}
+
+.qa-section h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .qa-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+.qa-section hr {
+  margin-bottom: 69px;
+}
+
+@media screen and (max-width: 767px) {
+  .qa-section hr {
+    margin-bottom: 55px;
+  }
+}
+
+.qa-section .qa-list-item {
+  position: relative;
+  border-bottom: dotted 1px #dedede;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.qa-section .qa-list-item h3 {
+  color: #333333;
+  font-weight: 100;
+}
+
+.qa-section .qa-list-item span {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  color: #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+}
+
+.qa-section .qa-list-item .qa-content {
+  font-size: 1rem;
+  display: none;
+  padding: 0;
+  margin-left: 13%;
+  color: #949494;
+}
+
 /*========= Contact ===========*/
 .contact-section {
   background-color: #EFEFEF;

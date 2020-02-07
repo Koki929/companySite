@@ -71,3 +71,17 @@ $('.nav-items a').click(function(){
     $('.nav-items a').removeClass('clicked');
     $(this).addClass('clicked');
 });
+
+// accordion
+$('.qa-list-item').click(function() {
+    var $qaContent = $(this).find('.qa-content');
+    if($qaContent.hasClass('open')) { 
+      $qaContent.removeClass('open');
+      $qaContent.slideUp();
+      $(this).find('span').text('+');
+    } else {
+      $qaContent.addClass('open'); 
+      $qaContent.slideDown();
+      $(this).find('span').text('-'); 
+    }
+  });
