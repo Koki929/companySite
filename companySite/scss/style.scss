@@ -199,6 +199,9 @@ $sp-per: 0.35;
           }
         }
       }
+      .clicked {
+        border-bottom: solid 2px $red;
+      }
     }
   }
 }
@@ -1262,40 +1265,44 @@ $sp-per: 0.35;
       }
     }
   }
-  .back-to-top {
-    position: absolute;
-    right: 19px;
-    bottom: 14px;
+}
+
+/*========= Scroll button ===========*/
+.back-to-top {
+  position: fixed;
+  right: 19px;
+  bottom: 14px;
+  display: none;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  @include mq('sp') {
+    height: 40px;
+    width: 40px;
+    right: 10px;
+    bottom: 20px;
+  }
+  a {
+    display: block;
     background-color: $blue;
     height: 60px;
     width: 60px;
-    text-align: center;
     transition: all 0.3s ease 0s;
+    opacity: 0.6;
     &:hover {
-      opacity: 0.6;
+      opacity: 1;
     }
     @include mq('sp') {
       height: 40px;
       width: 40px;
-      right: 10px;
-      bottom: 20px;
     }
-    a {
-      display: inline-block;
-      height: 60px;
-      width: 60px;
-      @include mq('sp') {
-        height: 40px;
-        width: 40px;
-      }
-    }
-    i {
-      color: #FFFFFF;
-      font-size: 32px;
-      line-height: 60px;
-      @include mq('sp') {
-        line-height: 40px;
-      }
+  }
+  i {
+    color: #FFFFFF;
+    font-size: 32px;
+    line-height: 60px;
+    @include mq('sp') {
+      line-height: 40px;
     }
   }
 }

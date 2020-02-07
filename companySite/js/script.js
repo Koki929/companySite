@@ -29,3 +29,45 @@ $(function() {
       $('.bar1, .bar2, .bar3, .header, .mainvisual').toggleClass('open');
     })
 });
+
+// floating button
+var syncerTimeout = null;
+$( function() {
+	$(window).scroll( function() {
+		if(syncerTimeout == null) {
+			syncerTimeout = setTimeout(function() {
+				var element = $('.back-to-top');
+				var visible = element.is(':visible');
+				var now = $(window).scrollTop();
+				if(now > 500) {
+					if(!visible) {
+						element.fadeIn('slow');
+					}
+				}
+				else if(visible) {
+					element.fadeOut('slow');
+				}
+				syncerTimeout = null;
+			} , 1000);
+		}
+	});
+});
+
+// Smooth Scroll
+$(function(){
+    $('a[href^="#"]').click(function(){
+        var adjust = -30;
+        var speed = 400;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top + adjust;
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+    });
+});
+
+//navbar border added by clicking
+$('.nav-items a').click(function(){
+    $('.nav-items a').removeClass('clicked');
+    $(this).addClass('clicked');
+});

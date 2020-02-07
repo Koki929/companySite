@@ -235,6 +235,10 @@ hr {
   border-bottom: solid 2px #E81919;
 }
 
+.header .inner .nav-bar .clicked {
+  border-bottom: solid 2px #E81919;
+}
+
 /*========= main visual ===========*/
 .mainvisual.open {
   z-index: 0;
@@ -1761,24 +1765,19 @@ hr {
   }
 }
 
-.footer-section .back-to-top {
-  position: absolute;
+/*========= Scroll button ===========*/
+.back-to-top {
+  position: fixed;
   right: 19px;
   bottom: 14px;
-  background-color: #3F51B5;
+  display: none;
   height: 60px;
   width: 60px;
   text-align: center;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.footer-section .back-to-top:hover {
-  opacity: 0.6;
 }
 
 @media screen and (max-width: 767px) {
-  .footer-section .back-to-top {
+  .back-to-top {
     height: 40px;
     width: 40px;
     right: 10px;
@@ -1786,27 +1785,35 @@ hr {
   }
 }
 
-.footer-section .back-to-top a {
-  display: inline-block;
+.back-to-top a {
+  display: block;
+  background-color: #3F51B5;
   height: 60px;
   width: 60px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  opacity: 0.6;
+}
+
+.back-to-top a:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 767px) {
-  .footer-section .back-to-top a {
+  .back-to-top a {
     height: 40px;
     width: 40px;
   }
 }
 
-.footer-section .back-to-top i {
+.back-to-top i {
   color: #FFFFFF;
   font-size: 32px;
   line-height: 60px;
 }
 
 @media screen and (max-width: 767px) {
-  .footer-section .back-to-top i {
+  .back-to-top i {
     line-height: 40px;
   }
 }
