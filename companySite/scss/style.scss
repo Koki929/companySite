@@ -737,31 +737,83 @@ $sp-per: 0.35;
       margin-bottom: 55px;
     }
   }
-  .qa-list-item {
-    position: relative;
-    border-bottom: dotted 1px #dedede;
-    padding-top: 25px;
-    padding-bottom: 10px;
-    h3 {
-      color: #333333;
-      font-weight: 100;
+  .accordion {
+    width: 904px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 18px;
+    @include mq('tab') {
+      width: 80%;
     }
-    span {
-      position:absolute;
-      top:25px;
-      right: 20px;
-      color:#ccc;
-      font-size:1rem;
-      cursor: pointer;
-      width: 100%;
-      text-align: right;
+    @include mq('sp') {
+      font-size: 14px;
     }
-    .qa-content {
-      font-size: 1rem;
-      display: none;
-      padding: 0;
-      margin-left: 13%;
-      color: #949494;
+    li {
+      margin-bottom: 28px;
+      .ac {
+        cursor: pointer;
+        background-color: $blue;
+        color: #FFF;
+        height: 60px;
+        line-height: 60px;
+        padding-left: 22px;
+        position: relative;
+        transition: all 0.3s ease 0s;
+        .line1 { 
+          display: block;
+          background: #FFF;
+          position: absolute;
+          top: 28px;
+          right: 19px;
+          width: 16px;
+          height: 3px;
+          border-radius: 2px;
+          @include mq('sp') {
+            width: 14px;
+            right: 17.5px;
+          }
+        }
+        .line2 {
+          display: block;
+          background: #FFF;
+          position: absolute;
+          top: 21.5px;
+          right: 25px;
+          width: 3px;
+          height: 16px;
+          border-radius: 2px;
+          transition: all 0.3s ease 0s;
+          @include mq('sp') {
+            height: 14px;
+            right: 23px;
+            top: 23.5px;
+          }
+        }
+        .line2.open { 
+          opacity: 0; 
+        }
+        &:hover {
+          opacity: 0.6;
+        }
+        .qa-q {
+          font-weight: bold;
+          margin-right: 19px;
+        }
+      }
+      .inner {
+        display: none;
+        background-color: #FFF;
+        color: $blue;
+        border: 1px solid $blue;
+        .content {
+          display: flex;
+          padding: 23px 27px 18px 22px;
+          .qa-a {
+            font-weight: bold;
+            margin-right: 21px;
+          }
+        }
+      }
     }
   }
 }

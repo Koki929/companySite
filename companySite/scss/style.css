@@ -1005,35 +1005,111 @@ hr {
   }
 }
 
-.qa-section .qa-list-item {
-  position: relative;
-  border-bottom: dotted 1px #dedede;
-  padding-top: 25px;
-  padding-bottom: 10px;
+.qa-section .accordion {
+  width: 904px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
 }
 
-.qa-section .qa-list-item h3 {
-  color: #333333;
-  font-weight: 100;
+@media screen and (max-width: 1104px) {
+  .qa-section .accordion {
+    width: 80%;
+  }
 }
 
-.qa-section .qa-list-item span {
-  position: absolute;
-  top: 25px;
-  right: 20px;
-  color: #ccc;
-  font-size: 1rem;
+@media screen and (max-width: 767px) {
+  .qa-section .accordion {
+    font-size: 14px;
+  }
+}
+
+.qa-section .accordion li {
+  margin-bottom: 28px;
+}
+
+.qa-section .accordion li .ac {
   cursor: pointer;
-  width: 100%;
-  text-align: right;
+  background-color: #3F51B5;
+  color: #FFF;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 22px;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-.qa-section .qa-list-item .qa-content {
-  font-size: 1rem;
+.qa-section .accordion li .ac .line1 {
+  display: block;
+  background: #FFF;
+  position: absolute;
+  top: 28px;
+  right: 19px;
+  width: 16px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .qa-section .accordion li .ac .line1 {
+    width: 14px;
+    right: 17.5px;
+  }
+}
+
+.qa-section .accordion li .ac .line2 {
+  display: block;
+  background: #FFF;
+  position: absolute;
+  top: 21.5px;
+  right: 25px;
+  width: 3px;
+  height: 16px;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-width: 767px) {
+  .qa-section .accordion li .ac .line2 {
+    height: 14px;
+    right: 23px;
+    top: 23.5px;
+  }
+}
+
+.qa-section .accordion li .ac .line2.open {
+  opacity: 0;
+}
+
+.qa-section .accordion li .ac:hover {
+  opacity: 0.6;
+}
+
+.qa-section .accordion li .ac .qa-q {
+  font-weight: bold;
+  margin-right: 19px;
+}
+
+.qa-section .accordion li .inner {
   display: none;
-  padding: 0;
-  margin-left: 13%;
-  color: #949494;
+  background-color: #FFF;
+  color: #3F51B5;
+  border: 1px solid #3F51B5;
+}
+
+.qa-section .accordion li .inner .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 23px 27px 18px 22px;
+}
+
+.qa-section .accordion li .inner .content .qa-a {
+  font-weight: bold;
+  margin-right: 21px;
 }
 
 /*========= Contact ===========*/

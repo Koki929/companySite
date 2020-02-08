@@ -73,15 +73,9 @@ $('.nav-items a').click(function(){
 });
 
 // accordion
-$('.qa-list-item').click(function() {
-    var $qaContent = $(this).find('.qa-content');
-    if($qaContent.hasClass('open')) { 
-      $qaContent.removeClass('open');
-      $qaContent.slideUp();
-      $(this).find('span').text('+');
-    } else {
-      $qaContent.addClass('open'); 
-      $qaContent.slideDown();
-      $(this).find('span').text('-'); 
-    }
-  });
+$(function(){
+	$('.ac').click(function(){
+        $(this).next('ul').slideToggle();
+        $(this).find('.line2').toggleClass('open');
+	});
+});
