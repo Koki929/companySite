@@ -1204,6 +1204,139 @@ $sp-per: 0.35;
             opacity: 0.6;
           }
         }
+        .modal{
+          display: none;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 50;
+        }
+        .modal__bg{
+          background: rgba(0,0,0,0.4);
+          height: 100vh;
+          position: absolute;
+          width: 100%;
+        }
+        .modal__content{
+          background: #fff;
+          left: 50%;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          width: 930px;
+          height: 610px;
+          box-sizing: border-box;
+          padding: 65px 0 20px;
+          color: #707070;
+          @include mq('tab') {
+            width: 80%;
+            padding: 30px 0 20px;
+          }
+          @include mq('tab') {
+            padding: 30px 0 20px;
+          }
+          h3 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            @include mq('tab') {
+              font-size: 20px;
+            }
+            @include mq('sp') {
+              font-size: 16px;
+            }
+          }
+          hr {
+            width: 150px;
+            border-top: 2px solid $blue;
+            margin-bottom: 48.5px;
+            @include mq('sp') {
+              margin-bottom: 30px;
+            }
+          }
+          h4 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 56.5px 18px 83.5px;
+            position: relative;
+            @include mq('tab') {
+              font-size: 16px;
+            }
+            @include mq('sp') {
+              font-size: 12px;
+              margin: 0 35px 10px 53.5px;
+            }
+            &:before {
+              position: absolute;
+              content: "";
+              background-color: $blue;
+              width: 3px;
+              height: 18px;
+              top: 6px;
+              left: -27.5px;
+            }
+          }
+          p {
+            font-size: 16px;
+            margin: 0 56.5px 0 83.5px;
+            @include mq('tab') {
+              font-size: 12px;
+            }
+            @include mq('sp') {
+              font-size: 8px;
+              margin: 0 35px 0 53.5px;
+            }
+          }
+          .modal-content-p1 {
+            margin-bottom: 40px;
+            @include mq('sp') {
+              margin-bottom: 25px;
+            }
+          }
+          .modal-content-p2 {
+            margin-bottom: 29px;
+            @include mq('sp') {
+              margin-bottom: 15px;
+            }
+          }
+          .large-button {
+            color: #FFF;
+            background-color: $blue;
+            text-decoration: none;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            width: 180px;
+            height: 38px;
+            line-height: 38px;
+            border-radius: 12px;
+            @include mq('sp') {
+              font-size: 10px;
+              height: 28px;
+              line-height: 28px;
+            }
+          }
+          .small-button {
+            display: block;
+            position: absolute;
+            color: #FFF;
+            background-color: $blue;
+            border-radius: 50%;
+            top: -21.5px;
+            right: -21.5px;
+            height: 43px;
+            width: 43px;
+            text-align: center;
+            line-height: 43px;
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
       }
     }
     .contact-submit {

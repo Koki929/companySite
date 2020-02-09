@@ -1680,6 +1680,190 @@ hr {
   opacity: 0.6;
 }
 
+.contact-section .contact-items .contact-check .privacy .modal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.contact-section .contact-items .contact-check .privacy .modal__bg {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+
+.contact-section .contact-items .contact-check .privacy .modal__content {
+  background: #fff;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 930px;
+  height: 610px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 65px 0 20px;
+  color: #707070;
+}
+
+@media screen and (max-width: 1104px) {
+  .contact-section .contact-items .contact-check .privacy .modal__content {
+    width: 80%;
+    padding: 30px 0 20px;
+  }
+}
+
+@media screen and (max-width: 1104px) {
+  .contact-section .contact-items .contact-check .privacy .modal__content {
+    padding: 30px 0 20px;
+  }
+}
+
+.contact-section .contact-items .contact-check .privacy .modal__content h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1104px) {
+  .contact-section .contact-items .contact-check .privacy .modal__content h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-section .contact-items .contact-check .privacy .modal__content h3 {
+    font-size: 16px;
+  }
+}
+
+.contact-section .contact-items .contact-check .privacy .modal__content hr {
+  width: 150px;
+  border-top: 2px solid #3F51B5;
+  margin-bottom: 48.5px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-section .contact-items .contact-check .privacy .modal__content hr {
+    margin-bottom: 30px;
+  }
+}
+
+.contact-section .contact-items .contact-check .privacy .modal__content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 56.5px 18px 83.5px;
+  position: relative;
+}
+
+@media screen and (max-width: 1104px) {
+  .contact-section .contact-items .contact-check .privacy .modal__content h4 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-section .contact-items .contact-check .privacy .modal__content h4 {
+    font-size: 12px;
+    margin: 0 35px 10px 53.5px;
+  }
+}
+
+.contact-section .contact-items .contact-check .privacy .modal__content h4:before {
+  position: absolute;
+  content: "";
+  background-color: #3F51B5;
+  width: 3px;
+  height: 18px;
+  top: 6px;
+  left: -27.5px;
+}
+
+.contact-section .contact-items .contact-check .privacy .modal__content p {
+  font-size: 16px;
+  margin: 0 56.5px 0 83.5px;
+}
+
+@media screen and (max-width: 1104px) {
+  .contact-section .contact-items .contact-check .privacy .modal__content p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-section .contact-items .contact-check .privacy .modal__content p {
+    font-size: 8px;
+    margin: 0 35px 0 53.5px;
+  }
+}
+
+.contact-section .contact-items .contact-check .privacy .modal__content .modal-content-p1 {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-section .contact-items .contact-check .privacy .modal__content .modal-content-p1 {
+    margin-bottom: 25px;
+  }
+}
+
+.contact-section .contact-items .contact-check .privacy .modal__content .modal-content-p2 {
+  margin-bottom: 29px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-section .contact-items .contact-check .privacy .modal__content .modal-content-p2 {
+    margin-bottom: 15px;
+  }
+}
+
+.contact-section .contact-items .contact-check .privacy .modal__content .large-button {
+  color: #FFF;
+  background-color: #3F51B5;
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  width: 180px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-section .contact-items .contact-check .privacy .modal__content .large-button {
+    font-size: 10px;
+    height: 28px;
+    line-height: 28px;
+  }
+}
+
+.contact-section .contact-items .contact-check .privacy .modal__content .small-button {
+  display: block;
+  position: absolute;
+  color: #FFF;
+  background-color: #3F51B5;
+  border-radius: 50%;
+  top: -21.5px;
+  right: -21.5px;
+  height: 43px;
+  width: 43px;
+  text-align: center;
+  line-height: 43px;
+}
+
+.contact-section .contact-items .contact-check .privacy .modal__content .small-button:hover {
+  opacity: 1;
+}
+
 .contact-section .contact-items .contact-submit {
   position: relative;
   width: 261px;
